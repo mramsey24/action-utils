@@ -1,0 +1,12 @@
+name: Test Stuff
+on:
+  push:
+    - main
+
+jobs:
+  build-it:
+    steps:
+      - name: Directory Listing
+        run: ls -al
+      - name: Checkout
+        uses: actions/checkout@v4
